@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="Admin_admin_master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Mua Bán Đất Nhà</title>
+    <link href="../Css/base.css" rel="stylesheet" />
+    <link href="../Css/Css.css" rel="stylesheet" />
+    <link href="../Css/SpryValidationSelect.css" rel="stylesheet" />
+    <link href="../Css/SpryValidationTextField.css" rel="stylesheet" />
+    <script src="../Scripts/SpryValidationSelect.js"></script>
+    <script src="../Scripts/SpryValidationTextField.js"></script>
+    <%--<script src="../Scripts/itab.js"></script>
+    <script src="../Scripts/JQuery.js"></script>--%>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Sheet">
+            <div id="PageHeader">
+                <!-- HEADER -->
+                 <div class="logo"></div>
+                <!-- KẾT THỨC -->
+            </div>
+            <div id="Container" class="clearfix" >
+                <div class="left Col">
+                    <!-- LEFT -->
+                    <div style='height:1px; width:1px; clear :both;'></div>
+                    <div class='dangxuatadmin'> <a href="../Default.aspx?dangxuat=1">Đăng xuất</a></div>
+                    <div class='menu'>
+                        <ul class='menu_active'>
+                            <h2> QUẢN LÝ</h2>
+                            <li><a href='themBDS.aspx'>» Thêm BĐS</a></li>
+                            <li><a href='suaxoaBDS.aspx'>» Cập nhật - xoá BĐS</a></li>                            
+                            <%--<li><a href='quanlythongtinwebsite?Action=View'>» Quản lý DM khu vực</a></li>
+                            <li<a href='quanlythongbao?Action=View'>» Quản lý DM loại BĐS</a></li>--%>
+                        </ul>
+                    </div>
+                    <!-- KẾT THỨC -->
+                </div>
+
+                <div class="right Col">
+                    <!-- NỘI DUNG -->
+                    <asp:ContentPlaceHolder id="head" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <!-- KẾT THỨC -->				
+                </div>
+            </div>
+            <div id="PageFooter">
+                <!-- Footer -->
+                <span style="font-weight:bold; color:#999">MUA BÁN ĐẤT NHÀ<br />
+                </span>
+                <span>Website: <span style="color:#999" >www.muabandatnha.vn</span>
+                </span>
+                <!-- KẾT THỨC -->
+            </div>
+        </div>
+    </form>
+</body>
+</html>
