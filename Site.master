@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mua Bán Đất Nhà</title>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="Css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="Css/nhadat.css" />
+</head>
+<body>
+    <script src="https://uhchat.net/code.php?f=5f793d"></script>
+    <!-- Header -->
+        <header id="header" class="py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 text-sm-left text-center header-left py-1">
+                        <i class="fa fa-phone mr-2"></i>
+                        <i class="fa fa-facebook"></i>
+                        <span class="zalo">Zalo</span>
+                        <span class="mr-3">0909.381.986 - 0973.533.899 - 0834.666.939</span>                        
+                    </div>
+                    <div class="col-sm-4 text-sm-right text-center">
+                        <a href="#" class="dangnhap" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a href="nha-dat-1" class="navbar-brand text-center navbar-brand--logo">                    
+                         <img src="./Images/logo.png" alt="" height="50">                   
+                </a>
+                <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+                <div class="collapse navbar-collapse" id="myMenu">
+                    <ul class="navbar-nav ml-auto navbar-nav--menu mb-3">
+                        <li class="nav-item" id="trangchu" runat="server">
+                            <a href="nha-dat-1" class="nav-link">TRANG CHỦ
+                            </a>
+                            <div class="nav-item__line"></div>
+                        </li>
+                        <li class="nav-item dropdown" id="khuvuc" runat="server">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">KHU VỰC
+                            </a>
+                            <div class="nav-item__line"></div>
+                            <div class="dropdown-menu" id="showKhuVuc" runat="server">
+                            </div>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown" id="loai" runat="server">
+                            <a class="nav-link dropdown-toggle" href="#" id="A1" data-toggle="dropdown">LOẠI BẤT ĐỘNG SẢN
+                            </a>
+                            <div class="nav-item__line"></div>
+                            <div class="dropdown-menu" id="showLoaiBDS" runat="server">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#footer" class="nav-link">LIÊN HỆ</a>
+                            <div class="nav-item__line"></div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <section class="container">
+            <div>
+                <%--<img ID="3ways" src="./Images/nhadat.jpg" class="img-fluid banner" alt="" runat="server">--%>
+                <img id="img_banner" alt="Banner" class="img-fluid banner" runat="server" src="" />
+            </div>
+        </section>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+        </div>
+        
+        <!-- Popup đăng nhập-->
+        <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">ĐĂNG NHẬP</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        
+            <!-- Modal body -->
+            <div class="modal-body">                
+                <div>
+                    <div class="form-group">
+                        <label>Tài khoản:</label>
+                        <input type="text" class="form-control" id="taikhoan"/>
+                        <div class="alert alert-danger hide thongbao_tk">
+                            Vui lòng nhập tài khoản!
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu:</label>
+                        <input type="password" class="form-control" id="matkhau" />
+                        <div class="alert alert-danger hide thongbao_mk">
+                            Vui lòng nhập mật khẩu!
+                        </div>
+                    </div>
+                    <div class="form-group d-flex justify-content-end">
+                        <button class="btn btn-success" id="dangnhap">Đăng nhập</button>                        
+                    </div>
+                    <div class="alert alert-danger hide thongbao_dn">
+                            Mật khẩu hoặc tài khoản không đúng!
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal footer -->
+            <%--<div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>--%>
+        
+          </div>
+        </div>
+      </div>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer-detail">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 footer__about mb-3 mb-md-0">
+                            <h2>Công ty chúng tôi</h2>
+                            <p>
+                                Công ty TNHH Thương mại Dịch Vụ Tư Vấn Hoàng Phú
+                            </p>
+                            <p>
+                                Chuyên mua bán bất động sản
+                            </p>
+                        </div>
+                        <div class="col-md-6 footer__contact mb-3 mb-md-0">
+                            <h2>Thông tin liên hệ</h2>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Tầm Long-Trí Bình-Châu Thành-Tây Ninh</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <span>ctytnhhhtmdvtvxdhoangphu@gmail.com</span>
+                            </p>
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                <span>0909.381.986 - 0973.533.899 - 0834.666.939</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right py-3 text-center">
+                <!-- <p class="mb-0">© 2018 Instruction. All rights reserved | Design by <span>W3layouts</span></p> -->
+                <p class="mb-0">© Công ty TNHH Thương mại Dịch Vụ Tư Vấn Hoàng Phú</p>
+            </div>
+        </footer>
+    
+    <!-- jQuery library -->
+    <script src="javascripts/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="javascripts/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="javascripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="javascripts/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="javascripts/nhadat.js"></script>
+
+    <script type="text/javascript">
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            nav: false,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3,
+                    loop: false
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>
