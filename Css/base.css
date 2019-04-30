@@ -1,0 +1,48 @@
+/* RESET */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong{font-size: 1em; font-weight: normal; font-style: normal;}
+fieldset,img {border: none;}
+caption{text-align: left;}
+th{color:inherit}
+table {border-collapse: collapse; border-spacing: 0; font-size:12px;}
+BODY{text-align:center;}
+
+.clear {clear:both;}
+.clearer {clear: both; display: block; margin: 0; padding: 0; height: 0; line-height: 1px; font-size: 1px;}
+
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.clearfix{display:inline-block;}
+html[xmlns] .clearfix{display:block;}
+* html .clearfix{height:1%;}
+form{margin:0px;padding:0px;}
+textarea{border:1px solid #bdc7d8;padding:3px;font-size:11px;font-family:arial, tahoma, verdana,  sans-serif, "lucida grande";
+    margin-left: 3px;
+}
+img {behavior:url(css/iepngfix.htc)}
+
+/* TYPE */
+body {font: 12px/normal Arial, Verdana, "Lucida Grande", Geneva, sans-serif;}
+a{color:#600;}
+strong, b {font-weight:bold;}
+em, i {font-style:italic;}
+sup {padding-left:1px; font-size:10px !important; font-weight:normal !important; vertical-align: baseline; position: relative; bottom: 0.33em; color:#76797c;}
+ul, ol, li{text-align:left;}
+
+a:link, a:visited {color:#600; text-decoration:none;}
+a:hover {text-decoration: underline;}
+.more {font-size:11px; padding-right: 9px; background: url(../images/morearrow.png) 100% 0.4em no-repeat; white-space: nowrap;}
+.requiredMark{color:red; font-weight:bold; font-size:15px; line-height:15px; padding:0 3px;}
+li a, li span{line-height:normal;}
+
+p {margin-bottom: 18px;}
+h1 {font-weight: bold; font-size: 24px; line-height: 36px; margin-bottom: 18px; font-weight:normal;}
+h2 {font-weight: bold; font-size: 16px; line-height: 18px; margin-bottom: 18px;}
+h3 {font-weight: bold; font-size: 1em; line-height: 18px;}
+h4 {font-weight: bold; font-size: 10px; line-height: 18px;}
+
+ul.square,
+ul.circle {margin-left: 2em; margin-bottom:20px; margin-top:10px;}
+ul.square {list-style: square outside;}
+ul.circle {list-style: circle outside;}
+ul ul.circle,
+ul ul.square {margin-top: 4px; margin-bottom: 5px;}

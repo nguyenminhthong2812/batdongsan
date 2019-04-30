@@ -1,0 +1,260 @@
+#header{
+	background-color: #ff4f81;
+	color:white;
+}
+.header-left i{
+	margin-right: 4px;
+}
+.header-right i{
+	margin-left: 2px;
+	padding: 8px 10px;
+	background-color: #333333;
+	border: 1px solid transparent;
+	transition: all 0.5s;
+
+}
+
+.zalo {
+    font-weight: 450;
+}
+
+/* .header-right i:hover{
+	background-color: #ff4f81;
+	border: 1px solid white;
+} */
+
+.dangnhap{
+    color: white; 
+    font-weight: 450;   
+}
+.dangnhap:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-brand--logo p{
+	color: #ff4f81;
+	margin-top:-5px;
+}
+.navbar-nav--menu li a{
+	color: #333333 !important;
+	font-weight: bold;
+	margin-left: 20px;
+	font-size: 17px;
+	transition: all 0.5s;
+}
+.navbar-nav--menu li a:hover{
+	color:#ff4f81 !important;
+}
+.navbar-nav--menu .nav-item{
+	margin-left:20px;
+}
+.nav-item__line{
+	width: 0%;
+	background-color: #ff4f81;
+	height: 2px;
+	margin-left:10px;	
+	transition: all 0.5s;
+}
+.navbar-nav--menu .active a{
+	color: #ff4f81 !important;
+}
+.navbar-nav--menu .active .nav-item__line{
+	width: 100%;
+}
+.navbar-nav--menu .nav-item:hover>.nav-item__line{
+	width: 100%;			
+}
+
+.dropdown-item:hover{
+    background: none !important;
+}
+/* Banner */
+.banner{
+    width:100%;
+    height: 300px;
+    /* background-image: url('../images/nhadat.jpg'); */
+}
+/*HÌNH ẢNH ĐẤT*/
+.hotnews-title{
+    color: #ff4f81;
+	font-size: 30px;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+}
+.title{
+    font-weight: 400;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 450px;
+}
+
+
+/* NỘI DUNG */
+.noidung{
+    padding: 14px;
+    font-size: 16px;
+}
+/*FOOTER*/
+.footer-detail{
+	background-color: #141415;
+	padding: 3rem 15px;
+}
+.footer-detail h2{
+	color: #ff4f81;
+	font-size: 1.5em;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.footer-detail p{
+	color: #8b8b96;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.footer__news p i{
+	color: #ff4f81;
+	margin-right: 10px;
+}
+.footer__contact p i{
+	width:30px;
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
+	border: 1px solid #4b4b50;
+	font-size: 15px;
+	color:white;
+}
+.footer__contact p span{
+	margin-left: 10px;
+}
+.footer__form h2{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.footer__form input{
+	height: 40px;
+	width:70%;
+}
+.btn-footer-submit{
+	background-color: #ff4f81;
+	border-radius: 0;
+	color: white;
+	margin-bottom: 5px;
+	cursor: pointer;
+	height:40px;
+	width:25%;
+	margin-left: 10px;
+
+}
+.btn-footer-submit:hover{
+	background-color: #ec1955;
+}
+.copy-right{
+	background-color: black;
+	color: white;
+
+}
+.copy-right span{
+	color: #ff4f81;
+}
+
+
+
+
+
+
+
+
+
+
+/*media query */
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.navbar-brand--logo h1{
+		font-size: 20px;
+	}
+	.navbar-nav--menu li a{	
+	font-size: 14px;
+	}
+	.navbar-nav--menu .nav-item{
+	margin-left:8px;
+	}
+	.footer__form h2{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.carousel-caption--config{
+	bottom: 17%;
+	}
+	.carousel-indicators--config{
+	bottom: 0%;
+	}
+	.carousel-caption--config h1{
+	font-weight: normal;
+	font-size: 1.5em;
+	}
+.carousel-caption--config p{
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	line-height: 1.3em;
+	margin-bottom: 0;
+	}
+	
+	.welcome-title h1{
+	color: #ff4f81;
+	font-size: 25px;	
+	}
+	.welcome-title span{
+		font-size: 12px;
+		letter-spacing: 2px;		
+	}
+	.welcome-title__line{
+		width:50px;
+	}
+	.event-img img{
+		margin-bottom: 10px;
+	}
+	.event-section__spacing{
+		height: 1rem;
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 768px){
+	.carousel-caption--config{
+	bottom: 20%;
+	}
+	.carousel-indicators--config{
+	bottom: 10%;
+	}
+	.carousel-caption--config h1{
+	font-weight: normal;
+	font-size: 2.2em;
+	}
+.carousel-caption--config p{
+	font-size: 1em;
+	letter-spacing: 2px;
+	line-height: 1.3em;
+	margin-bottom: 0;
+	}
+
+	.education-course h2{
+		font-size: 25px;
+	}
+
+
+
+
+}
+@media screen and (min-width: 769px) and (max-width: 849px){
+	
+	.carousel-caption--config h1{
+	font-weight: normal;
+	font-size: 3em;
+	}
+	
+}
