@@ -5,7 +5,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    
+    <form action='themsanpham' method='post' name='formthemsp' id='formthemsp'>
         <table border='0' cellpadding='3' cellspacing='3' >
         <tr>
             <td colspan='4'><span class='TitleList new' >Thêm mới bất động sản</span>
@@ -76,6 +76,12 @@
             </td>
         </tr>
         <tr>
+            <td style='padding-left: 20px; width: 150px'>Youtube:<span class='markStar'>*</span></td>
+            <td colspan="3">                
+                <asp:TextBox ID="link" runat="server" Width="100%"></asp:TextBox>                
+            </td>
+        </tr>
+        <tr>
             <td colspan="4"> </td>            
         </tr>
         <tr>
@@ -127,7 +133,7 @@
             </td>
         </tr>
     </table>
-    
+    </form>
     
 </asp:Content>
 

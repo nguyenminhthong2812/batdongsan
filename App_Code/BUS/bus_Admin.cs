@@ -47,6 +47,7 @@ public class bus_Admin
             db.AddInParameter(dbCommand, "@noibat", DbType.Boolean, obj.noibat);
             db.AddInParameter(dbCommand, "@anhdaidien", DbType.String, obj.hinhanh);
             db.AddInParameter(dbCommand, "@anhchitiet", DbType.String, anhct);
+            db.AddInParameter(dbCommand, "@youtube", DbType.String, obj.youtube);
             db.AddOutParameter(dbCommand, "@tt", DbType.Int32, 100);
             db.ExecuteNonQuery(dbCommand);
             return Convert.ToInt32(db.GetParameterValue(dbCommand, "@tt"));

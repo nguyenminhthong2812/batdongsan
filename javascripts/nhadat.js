@@ -1,4 +1,7 @@
 ﻿$(document).ready(function () {
+
+    
+
     // dùng 1 mảng chứa danh sách BDS
     //var DS_BDS = [];
     //var DS_HINHANH = [];
@@ -243,6 +246,22 @@
     //    slidehtml += '<span class="carousel-control-next-icon"></span></a>';        
     //    $("#slide").html(slidehtml);
     //}
+    // Xử lý xem video
+    //$("body").delegate(".title-video", "click", function () {
+    //    var link = $(this).find("a").attr("data-link");
+    //    link = link.replace('watch?v=', 'embed/');
+    //    $("#link").attr('src', link);
+    //})
+    $(".title-video").click(function (event) {
+        event.preventDefault();
+        var link = $(this).find("a").attr("data-link");
+        link = link.replace('watch?v=', 'embed/');       
+        $("#link").attr('src', link);
+    });
+
+    $(".no-video").click(function (event) {
+        event.preventDefault();
+    });
 
     // Xử lý quay lại trang danh sách sản phẩm
     $("body").delegate(".hotnews-title", "click", function () {

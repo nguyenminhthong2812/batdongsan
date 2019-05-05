@@ -11,6 +11,16 @@
                 <div class="row mt-5" id="show" runat="server">
 
                 </div>
+                 <!-- The Modal -->
+                 <div class="modal" id="myModalVideo">
+                    <div class="modal-dialog">
+                      <div class="modal-content video-content">                        
+                        <div class="modal-body video-body">          
+                          <iframe id="link" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 <!-- PHÂN TRANG -->
                 <div class="row my-5">
                     <div class="col text-center">

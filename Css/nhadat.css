@@ -5,7 +5,14 @@
 .header-left i{
 	margin-right: 4px;
 }
+.header-right i{
+	margin-left: 2px;
+	padding: 8px 10px;
+	background-color: #333333;
+	border: 1px solid transparent;
+	transition: all 0.5s;
 
+}
 
 
 .zalo {
@@ -122,6 +129,37 @@
     display: inline-block;  
 }
 
+.no-video {
+    opacity:0.1;
+   
+}
+
+/*.no-video a {
+     cursor:no-drop;
+}*/
+
+.title-video a {
+    color:blue;
+}
+
+.title-video a i {
+    color:red;
+}
+
+.video-body{
+    padding: 0;
+}
+
+/*.video-content{
+    width: 200%;
+    height: 400px;
+}
+
+
+#myModalVideo{
+    padding-right: 28% !important;
+}*/
+
 .title-adress {
     height:50px;    
     overflow:hidden;
@@ -163,10 +201,6 @@
     font-size: 16px;
 }
 
-    .noidung p {
-        margin:0px;
-    }
-
 .back {
     color: #ff4f81;
     font-size: 18px;
@@ -174,7 +208,6 @@
 }
 .back:hover {
     cursor:pointer;
-
 }
 
 .slide-arrow{
@@ -292,23 +325,6 @@
 
 
 /*media query */
-@media screen and (max-width:991px) {
-
-    .navbar-nav--menu li a {
-        font-size: 14px;
-    }
-
-    .banner{
-    width:100%;
-    height: 200px;
-    /* background-image: url('../images/nhadat.jpg'); */
-    }
-
-    .hotnews-title{        
-	    font-size: 26px;	    
-    }
-}
-
 @media screen and (min-width: 768px) and (max-width: 991px){
 	.navbar-brand--logo h1{
 		font-size: 20px;
@@ -322,10 +338,6 @@
 	.footer__form h2{
 		font-size: 1.2em;
 	}
-    
-
-    
-}
 }
 
 @media screen and (max-width: 576px){
@@ -364,7 +376,7 @@
 		height: 1rem;
 		width: 100%;
 	}
-    
+
 }
 @media screen and (max-width: 768px){
 	.carousel-caption--config{
@@ -388,7 +400,7 @@
 		font-size: 25px;
 	}
 
-    
+
 
 
 }

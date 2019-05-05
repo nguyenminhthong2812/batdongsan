@@ -13,26 +13,21 @@ public partial class Admin_themBDS : System.Web.UI.Page
     private bus_Admin admin = new bus_Admin();
     protected void Page_Load(object sender, EventArgs e)
     {
-        string session;
-        try
-        {
-             session = Session["user"].ToString();
-        }
-        catch {
-            session = null;
-        }
-        if (session == null || session != "admin")
+        if (Session["user"].ToString() != "admin")
         {
             Response.Redirect("~/Default.aspx");
         }
-        else
-        {   
+        //if (Session["logined"] == null || Session["db"] == null)
+
+        //    Response.Redirect("~/scripts/DangNhap.aspx");
+        //else
+        //{
             if (!IsPostBack)
             {
                 Clear();
                 loadDM();
             }
-        }
+        //}
     }
     private void loadDM()
     {
@@ -69,7 +64,8 @@ public partial class Admin_themBDS : System.Web.UI.Page
             obj.maKV = Convert.ToInt32(drlKhuvuc.SelectedItem.Value.ToString());
             obj.maLoaiBDS = Convert.ToInt32(drlLoaiBDS.SelectedItem.Value.ToString());
             obj.noibat = chkNoiBat.Checked;
-            
+            obj.youtube = link.Text.ToString();
+
             string anhdaidien,anhct="",stranhct="";
             if (txtanhdaidien.FileName != "")
             {
@@ -91,11 +87,7 @@ public partial class Admin_themBDS : System.Web.UI.Page
                 {
                     uploadedFile.SaveAs(System.IO.Path.Combine(Server.MapPath("~/Images/nhadat/"), uploadedFile.FileName));
                     stranhct += uploadedFile.FileName + ",";
-                }
-            }
-            else
-            {
-                stranhct = "Empty.jpg";
+                }               
             }
             int tt = admin.BUS_ql_batdongsan(obj, 1, stranhct);
             if (tt != 0)

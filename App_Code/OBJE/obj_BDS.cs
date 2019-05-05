@@ -22,5 +22,6 @@ namespace BDS.OBJE
         public int maLoaiBDS { get; set; }
         public bool noibat { get; set; }
         public string hinhanh { get; set; }
+        public string youtube { get; set; }
     }
 }

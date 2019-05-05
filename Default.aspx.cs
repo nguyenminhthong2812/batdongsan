@@ -15,13 +15,13 @@ public partial class _Default : System.Web.UI.Page
     
     protected void Page_Load(object sender, EventArgs e)
     {
-        try
-        {
-            string dangxuat = Request.QueryString["dangxuat"].ToString();
-            if (dangxuat == "1")
-                Session.Remove("user");
-        }
-        catch { }
+        //try
+        //{
+        //    string dangxuat = Request.QueryString["dangxuat"].ToString();
+        //    if (dangxuat == "1")
+        //        Session.Remove("user");
+        //}
+        //catch { }
         string khuvuc = RouteData.Values["khuvuc"] == null ? "" : RouteData.Values["khuvuc"].ToString();
         string tenloai = RouteData.Values["tenloai"] == null ? "" : RouteData.Values["tenloai"].ToString();
         int page = RouteData.Values["page"] == null ? 1 : Convert.ToInt32(RouteData.Values["page"]);
@@ -93,11 +93,15 @@ public partial class _Default : System.Web.UI.Page
                 }
 
                 string meta_tenbds = convertToUnSign3(dr["tenBDS"].ToString());
-                show_html += "<div class=\"col-sm-6 col-lg-3\">";
+                show_html += "<div class=\"col-xs-12 col-sm-6 col-lg-3\">";
                 show_html += "<div class=\"card\">";
                 show_html += "<a class=\"img-bds\" href=\"" + meta_tenbds + "-" + dr["maBDS"].ToString() + "\"><img class=\"card-img-top\" src=\"" + dr["HinhAnh"].ToString() + "\" alt=\"Card image\"></a>";
                 show_html += "<div class=\"card-body card-title\">";
                 show_html += "<div class=\"title-new\"><a href=\"" + meta_tenbds + "-" + dr["maBDS"].ToString() + "\" class=\"tenbds\" data-mabds = \"" + dr["maBDS"].ToString() + "\">" + tieude + "</a><p class=\"tooltiptext\" >" + dr["tenBDS"].ToString() + "</p></div>";
+                if(dr["youtube"].ToString() == "")
+                    show_html += "<div class=\"no-video\"><a href=\"#\"> <i class=\"fa fa-youtube-play\"></i> Xem video</a></div>";
+                else
+                    show_html += "<div class=\"title-video\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#myModalVideo\" data-link = \""+dr["youtube"].ToString() +"\"> <i class=\"fa fa-youtube-play\"></i> Xem video</a></div>";
                 show_html += "<div class=\"title-adress\"><p class=\"card-text\">" + diachi + "</p></div>";
                 show_html += "<div><span class=\"Gia\">" + dr["Gia"].ToString() + "</span></div>";
                 show_html += "</div></div></div>";

@@ -82,6 +82,12 @@
             </td>
         </tr>
         <tr>
+            <td style='padding-left: 20px; width: 150px'>Youtube:<span class='markStar'>*</span></td>
+            <td colspan="3">                
+                <asp:TextBox ID="txtyoutube" runat="server" Width="100%" Text='<%# Eval("youtube") %>'></asp:TextBox>                   
+            </td>
+        </tr>
+        <tr>
             <td colspan="4"> </td>            
         </tr>
         <tr>

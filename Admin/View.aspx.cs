@@ -162,6 +162,8 @@ public partial class Admin_View : System.Web.UI.Page
                 obj.maLoaiBDS = Convert.ToInt32(loaibds.SelectedItem.Value.ToString());
                 CheckBox noibat = (CheckBox)Viewedit.FindControl("chkNoiBat");
                 obj.noibat = noibat.Checked;
+                TextBox youtube = (TextBox)Viewedit.FindControl("txtyoutube");
+                obj.youtube = youtube.Text.ToString();
 
                 string anhdaidien, anhct = "", stranhct = "";
                 FileUpload txtanhdaidien = (FileUpload)Viewedit.FindControl("txtanhdaidien");
