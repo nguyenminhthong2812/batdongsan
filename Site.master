@@ -137,19 +137,22 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 footer__about mb-3 mb-md-0">
-                            <h2>Công ty chúng tôi</h2>
-                            <p>
+                            <%--<h2>Công ty chúng tôi</h2>--%>
+                            <h2>
                                 Công ty TNHH Thương mại Dịch Vụ Tư Vấn Hoàng Phú
-                            </p>
+                            </h2>                            
                             <p>
                                 Chuyên mua bán bất động sản
+                            </p>
+                            <p>
+                                Thiết kế điện công trình: Cấp IV.
                             </p>
                         </div>
                         <div class="col-md-6 footer__contact mb-3 mb-md-0">
                             <h2>Thông tin liên hệ</h2>
                             <p>
                                 <i class="fa fa-map-marker"></i>
-                                <span>Tầm Long-Trí Bình-Châu Thành-Tây Ninh</span>
+                                <span>số 59, Hẻm 60, đường Hoàng Lê Kha, Tổ 4, Khu phố 4, Thị trấn Châu Thành, huyện Châu Thành, tỉnh Tây Ninh</span>
                             </p>
                             <p>
                                 <i class="fa fa-envelope"></i>
