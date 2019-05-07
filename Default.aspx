@@ -15,15 +15,12 @@
                  <div class="modal" id="myModalVideo">
                     <div class="modal-dialog">
                       <div class="modal-content video-content">                        
-                        <div class="modal-body video-body">                             
-                            <p style="position: relative; padding: 30px 0px 57% 0px; height: 0; overflow: hidden;margin-bottom: 0px">
-                                <iframe id="link" src="" width="100%" height="100%" frameborder="0" style="display: block; margin: 0px auto; position: absolute; top: 0; left: 0;"></iframe>
-                            </p>
+                        <div class="modal-body video-body">          
+                          <iframe id="link" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
                 <!-- PHÂN TRANG -->
                 <div class="row my-5">
                     <div class="col text-center">
