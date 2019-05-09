@@ -203,6 +203,9 @@
     padding: 14px;
     font-size: 16px;
 }
+.noidung p{
+	margin-bottom:0px;
+}
 
 .back {
     color: #ff4f81;
